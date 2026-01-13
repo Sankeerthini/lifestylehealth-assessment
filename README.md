@@ -1,9 +1,9 @@
 # Lifestyle & Health Assessment (Frontend Demo)
 
-A responsive web-based lifestyle and health assessment tool built as a **frontend-focused demo project**.  
+A responsive web-based lifestyle and health assessment tool built as a **frontend-focused project**.  
 The application simulates AI-generated health insights based on user inputs across nutrition, activity, sleep, and stress.
 
-This project was created for an interview assignment to demonstrate **UI design, form handling, DOM manipulation, and overall frontend structure**.
+This project was created to demonstrate **UI design, form handling, DOM manipulation, and overall frontend structure**.
 
 ---
 
