@@ -45,9 +45,9 @@ All AI-related outputs are intentionally simulated.
 
 ## 📁 Project Structure
 
-├── index.html          # Homepage
-├── assessment.html     # Assessment form page
-├── style.css           # Global styles
-├── script.js           # Homepage interactions
-├── assessment.js       # Assessment logic & rendering
-├── images/             # Persona images and assets
+index.html — Homepage  
+assessment.html — Assessment form page  
+style.css — Global styles  
+script.js — Homepage interactions  
+assessment.js — Assessment logic & rendering  
+images/ — Persona images and assets
