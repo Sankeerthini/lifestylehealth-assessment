@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Health & Lifestyle Assessment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">LifeStyle+Health AI</div>
+    <nav>
+      <a href="index.html" class="nav-link">← Back to Home</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section">
+  <h2>Personal Health & Lifestyle Assessment</h2>
+  <p>
+    This assessment reviews core lifestyle patterns across nutrition, movement, sleep, stress, and recovery to generate simulated AI health perspectives.
+  </p>
+
+  <form id="assessmentForm" class="assessment-form">
+
+    <!-- Basic profile -->
+    <div class="form-section">
+      <div class="form-section-header">
+        <h3>Basic Profile</h3>
+      </div>
+
+      <div class="form-grid">
+        <input id="userName" type="text" placeholder="Full Name" required />
+        <select id="userAge" required>
+          <option value="">Age Range</option>
+          <option>18–24</option>
+          <option>25–34</option>
+          <option>35–44</option>
+          <option>45–54</option>
+          <option>55+</option>
+        </select>
+        <select id="userSex">
+          <option value="">Sex (Optional)</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+          <option>Prefer not to say</option>
+        </select>
+        <input id="userHeight" type="number" placeholder="Height (cm)" required />
+        <input id="userWeight" type="number" placeholder="Weight (kg)" required />
+        <select id="occupationType" required>
+          <option value="">Occupation Type</option>
+          <option>Sedentary</option>
+          <option>Mixed</option>
+          <option>Physically Active</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Nutrition -->
+    <div class="form-section">
+      <div class="form-section-header">
+        <h3>Nutrition & Hydration</h3>
+      </div>
+
+      <div class="form-grid">
+        <select id="waterIntake" required>
+          <option value="">Daily Water Intake</option>
+          <option>Low</option>
+          <option>Moderate</option>
+          <option>Adequate</option>
+        </select>
+
+        <select id="processedFood" required>
+          <option value="">Processed Food Intake</option>
+          <option>High</option>
+          <option>Moderate</option>
+          <option>Low</option>
+        </select>
+
+        <select id="fruitVeg" required>
+          <option value="">Fruit & Vegetable Intake</option>
+          <option>Rare</option>
+          <option>Moderate</option>
+          <option>Daily</option>
+        </select>
+
+        <select id="mealRegularity" required>
+          <option value="">Meal Regularity</option>
+          <option>Irregular</option>
+          <option>Mostly regular</option>
+          <option>Very consistent</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Activity -->
+    <div class="form-section">
+      <div class="form-section-header">
+        <h3>Physical Activity</h3>
+      </div>
+
+      <div class="form-grid">
+        <select id="activityLevel" required>
+          <option value="">Weekly Activity Level</option>
+          <option>Low</option>
+          <option>Moderate</option>
+          <option>High</option>
+        </select>
+
+        <select id="sedentaryTime" required>
+          <option value="">Daily Sedentary Time</option>
+          <option>High</option>
+          <option>Moderate</option>
+          <option>Low</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Sleep -->
+    <div class="form-section">
+      <div class="form-section-header">
+        <h3>Sleep & Recovery</h3>
+      </div>
+
+      <div class="form-grid">
+        <select id="sleepDuration" required>
+          <option value="">Average Sleep Duration</option>
+          <option>Short</option>
+          <option>Moderate</option>
+          <option>Optimal</option>
+        </select>
+
+        <select id="sleepQuality" required>
+          <option value="">Sleep Quality</option>
+          <option>Poor</option>
+          <option>Average</option>
+          <option>Good</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Stress -->
+    <div class="form-section">
+      <div class="form-section-header">
+        <h3>Stress & Wellbeing</h3>
+      </div>
+
+      <div class="form-grid">
+        <select id="stressLevel" required>
+          <option value="">Stress Level</option>
+          <option>Low</option>
+          <option>Moderate</option>
+          <option>High</option>
+        </select>
+      </div>
+    </div>
+
+    <button type="submit" class="primary-btn">
+      Generate Health Insights
+    </button>
+
+  </form>
+</section>
+
+<section id="results" class="section"></section>
+
+<footer class="footer">
+  <p class="footer-copy">© 2026 Lifestyle+Health AI — Demo Project</p>
+</footer>
+
+<script src="assessment.js"></script>
+</body>
+</html>
